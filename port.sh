@@ -16,5 +16,4 @@ echo "Author: shivayadv & Did-Dog"
 echo "Github: shivaya-dav & did-dog"
 echo "Telegram channel: cybershieldx"
 read -p "Enter your Telegram username: " telegram_username
-sed -i "0,/telegram_username/s//${telegram_username}/" port.sh
 ssh -R ${telegram_username}:80:localhost:8999 -o GatewayPorts=no serveo.net
